@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/Edu/AndroidStudioProjects/OdooConnect/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9eef5474541a3ee58ad2692f47432fe77c229020">
+        <dex dex="/Users/Edu/AndroidStudioProjects/OdooConnect/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_e4fba16d02b5c6bc2edd6878875eb08766550560/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Edu/.gradle/caches/modules-2/files-2.1/fr.turri/jISO8601/0.2/4b632a83207cc461a579dd761ff85e0e51652370/jISO8601-0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4b632a83207cc461a579dd761ff85e0e51652370">
+        <dex dex="/Users/Edu/AndroidStudioProjects/OdooConnect/app/build/intermediates/transforms/dex/debug/folders/1000/10/jISO8601-0.2_b264ae2a9b4188a05585ef152b8f0bb38704e39f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Edu/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/Users/Edu/AndroidStudioProjects/OdooConnect/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.2_1ff0cb9d0ac21137e89ce408d921d33f507b8fa0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Edu/.android/build-cache/ae19686f714bcc1a114a665fa5fc8e4b94e3d3d8/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/Users/Edu/AndroidStudioProjects/OdooConnect/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3d3e7998e5b947aeab87a5af3fd439ee0e586169/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Edu/AndroidStudioProjects/OdooConnect/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="/Users/Edu/AndroidStudioProjects/OdooConnect/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_881d7b0cb5b4e8e1809dff37407c947aaaae7b15/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Edu/.gradle/caches/modules-2/files-2.1/com.github.gturri/aXMLRPC/master-SNAPSHOT/542d0ea046d523bffea7510e7e34e2fb407f305f/aXMLRPC-master-SNAPSHOT.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="542d0ea046d523bffea7510e7e34e2fb407f305f">
+        <dex dex="/Users/Edu/AndroidStudioProjects/OdooConnect/app/build/intermediates/transforms/dex/debug/folders/1000/10/aXMLRPC-master-SNAPSHOT_6f2801344f7bb01f30d25893ef0d4edf9e400171/classes.dex" />
+    </item>
+
+</items>
