@@ -76,6 +76,8 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected Boolean doInBackground(Void... params) {
 
+            // Try connection to server
+
             if (inp) {
                 try {
                     Boolean ocT = OdooConnect.testConnection(cd.getUrl(), cd.getPort(),
@@ -99,6 +101,8 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected void onPreExecute() {
+
+            // Before connect check all data required
 
             if (isEmpty(domain)) {
                 msgResult = "Domain cannot be empty.";
@@ -134,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
         protected void onPostExecute(Boolean result) {
             pDialog.dismiss();
             if (result) {
-                executeGetData(null);
+                executeGetData(null); // if connection works call OdooGetData class
             } else {
                 msg.setMessage(msgResult);
                 msg.show();

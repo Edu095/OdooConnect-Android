@@ -24,7 +24,7 @@ import java.util.List;
 
 public class OdooGetData extends AppCompatActivity {
 
-    ConnectionData cd;
+    ConnectionData cd; // class to save login data
 
     AlertDialog.Builder msg;
     private String msgResult = "";
@@ -123,6 +123,7 @@ public class OdooGetData extends AppCompatActivity {
             List<HashMap<String, Object>> data = oc.search_read("res.partner", new Object[]{
                     new Object[]{new Object[]{"customer", "=", true}}}, "name");
 
+            // get data to fill spin partner list
             for (int i = 0; i < data.size(); ++i) {
                 if (data.get(i).get("id").toString().length()>1) {
                     listD.add("Id: " + data.get(i).get("id").toString() + " - " + data.get(i).get("name").toString());
@@ -224,7 +225,6 @@ public class OdooGetData extends AppCompatActivity {
             }
 
         } catch (Exception ex) {
-            // Any other exception
             msgResult = "Error: " + ex;
         }
     }
@@ -254,7 +254,6 @@ public class OdooGetData extends AppCompatActivity {
             msgResult += "Id of customer created: " + idC.toString();
 
         } catch (Exception ex) {
-            // Any other exception
             msgResult = "Error: " + ex;
         }
     }
@@ -273,7 +272,6 @@ public class OdooGetData extends AppCompatActivity {
                 msgResult += "Customer deleted: " + idD.toString();
             }
         } catch (Exception ex) {
-            // Any other exception
             msgResult = "Error: " + ex;
         }
     }

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="jISO8601-0.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/fr.turri/jISO8601/0.2/4b632a83207cc461a579dd761ff85e0e51652370/jISO8601-0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/fr.turri/jISO8601/0.2/deff0fcf5143813217c5cdd29c3e18f9b9945d41/jISO8601-0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -260,6 +260,9 @@ public class OdooConnect {
 
     /**
      * Used to modify an existing object.
+     *
+     * @param values: fields to change
+     * @return
      */
     public Boolean write(String model, Object[] id, HashMap values) {
         Boolean writeOk = false;
@@ -292,8 +295,6 @@ public class OdooConnect {
 
     /**
      * This is a generic method to call any WS.
-     *
-     * @param conditions Each one of the Objects can be one object instance, array or List... depending on the WS called.
      */
     @SuppressWarnings("unchecked")
     public Object[] call(String model, String method, final Integer offset,
