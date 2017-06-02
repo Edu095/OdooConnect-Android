@@ -27,7 +27,7 @@ try {
 ```
 
 ### Search / Read
-In this case returns a name list from model res.partner where contacts are Customer but not Company.
+In this case returns a name/phone list from model res.partner where contacts are Customer but not Company.
 In case there was any field related to another model we could also obtain such data.
 ```
 try {
@@ -37,7 +37,7 @@ try {
                     new Object[]{"customer", "=", true},
                     new Object[]{"is_company", "=", false}}};
 
-    List<HashMap<String, Object>> data = oc.search_read("res.partner", param, "name");
+    List<HashMap<String, Object>> data = oc.search_read("res.partner", param, "name", "phone");
 
     String msgResult = "";
     for (int i = 0; i < data.size(); ++i) {

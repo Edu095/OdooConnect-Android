@@ -19,6 +19,7 @@ import static java.util.Collections.emptyMap;
 
 /**
  * Original Class: https://github.com/zikzakmedia/android-openerp
+ * References Odoo10 Web Service API: https://www.odoo.com/documentation/10.0/api_integration.html
  *
  * This class provides access to basic methods in OpenObject, so you can use
  * them from an Android device. The operations supported are: <br>
@@ -112,9 +113,9 @@ public class OdooConnect {
     }
 
     /**
-     * You can pass new Object[0] to specify an empty list of conditions and no fields,
+     * @param conditions You can pass new Object[0] to specify an empty list of conditions and no fields,
      * which will return all the ids for that model.
-     *
+     * @param fields All the fields that you want to show
      * @return The fields of matching objects and if have relations with other model returns the name of the relation.
      */
 
@@ -131,6 +132,10 @@ public class OdooConnect {
         return search_read(model, 0, 0, conditions, fieldsL);
     }
 
+    /**
+    * @param offset Record where start to show
+    * @param limit Number of records to show: 0 -> all
+    */
     public List<HashMap<String, Object>> search_read(String model, Integer offset, Integer limit,
                                                      Object[] conditions, String... fields) {
         if (fields.length == 0) {
@@ -237,6 +242,8 @@ public class OdooConnect {
 
     /**
      * Creates a new record for the given model width the values supplied.
+     *
+     * @param values
      * Remember: In order to add different types in a Collection use Object, e.g. <br>
      * <code>
      * HashMap values = new HashMap(); <br>
@@ -260,6 +267,8 @@ public class OdooConnect {
 
     /**
      * Used to modify an existing object.
+     *
+     * @param values fields to change
      */
     public Boolean write(String model, Object[] id, HashMap values) {
         Boolean writeOk = false;
@@ -292,8 +301,6 @@ public class OdooConnect {
 
     /**
      * This is a generic method to call any WS.
-     *
-     * @param conditions Each one of the Objects can be one object instance, array or List... depending on the WS called.
      */
     @SuppressWarnings("unchecked")
     public Object[] call(String model, String method, final Integer offset,
