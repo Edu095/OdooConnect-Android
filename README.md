@@ -8,7 +8,7 @@ This class is based on [OpenErpConnect](https://github.com/zikzakmedia/android-o
 In this case I use the [aXMLRPC](https://github.com/gturri/aXMLRPC/tree/master) connector which is more easy to implement.
 
 To connect from Android to Odoo you will need to use android AsyncTask. In my case, I have not achieved it in any other way.
-[Here is an app example.](https://github.com/Edu095/OdooConnect/tree/OdooConnect-App)
+[Here is an app example.](https://github.com/Edu095/OdooConnect-Android/tree/OdooConnect-App)
 
 ## Here are some features:
 (For more information see the source and its comments)
